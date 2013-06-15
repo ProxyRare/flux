@@ -10,7 +10,7 @@ INSERT INTO `texts` (`identifier`, `display_text`) VALUES ('cmd_freezeall_desc',
 
 INSERT INTO `texts` (`identifier`, `display_text`) VALUES ('cmd_idle_desc', ':idle - Makes yourself automatically become idle');
 
-INSERT INTO `texts` (`identifier`, `display_text`) VALUES ('cmd_vip_desc', ':vip - Gives the target users vip');
+INSERT INTO `texts` (`identifier`, `display_text`) VALUES ('cmd_vip_desc', ':vip <username> - Gives the target users vip');
 
 INSERT INTO `texts` (`identifier`, `display_text`) VALUES ('cmd_hash_desc', ':hash <input> - Hashes the given text with MD5');
 

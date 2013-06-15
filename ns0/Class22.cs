@@ -442,6 +442,14 @@ namespace ns0
                     {
                         list.Add("cmd_freezeall");
                     }
+                    if (Phoenix.smethod_3(dataRow["cmd_vip"].ToString()))
+                    {
+                        list.Add("cmd_vip");
+                    }
+                    if (Phoenix.smethod_3(dataRow["cmd_hash"].ToString()))
+                    {
+                        list.Add("cmd_hash");
+                    }
 					this.dictionary_0.Add((uint)dataRow["userid"], list);
 				}
 			}
@@ -859,6 +867,14 @@ namespace ns0
                     {
                         list.Add("cmd_freezeall");
                     }
+                    if (Phoenix.smethod_3(dataRow["cmd_vip"].ToString()))
+                    {
+                        list.Add("cmd_vip");
+                    }
+                    if (Phoenix.smethod_3(dataRow["cmd_hash"].ToString()))
+                    {
+                        list.Add("cmd_hash");
+                    }
 					this.dictionary_1.Add((uint)dataRow["rank"], list);
 				}
 			}
@@ -999,6 +1015,8 @@ namespace ns0
             this.dictionary_4.Add("enableall", 87);
             this.dictionary_4.Add("freezeall", 88);
             this.dictionary_4.Add("idle", 89);
+            this.dictionary_4.Add("vip", 90);
+            this.dictionary_4.Add("hash", 91);
 			GClass4.smethod_1("completed!");
 			try
 			{

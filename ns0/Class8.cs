@@ -78,9 +78,24 @@ namespace ns0
             Console.WriteLine("       |_|    |_| |_____| (_/ \\_)      |_____| |_|_|_| |_____|   ");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("                                                 Flux EMU - Toxic and iMat");
+            //Console.WriteLine("                                                 Flux EMU - Toxic and iMat");
+            Console.WriteLine("                                  Flux EMU - Toxic, iMat, and Jo.hn");
+            //Console.WriteLine(Credz("Flux EMU - Toxic, iMat, and Jo.hn"));
             Console.ForegroundColor = ConsoleColor.White;
             Console.ResetColor();
+        }
+
+        private static string Credz(string Input)
+        {
+            int area = 74;
+            int spaces = area - Input.Length;
+            string space = "";
+            for (int i = 0; i < spaces; i++)
+            {
+                space += " ";
+            }
+            string credits = space + Input;
+            return credits;
         }
 
         private static void Initialize(out int width, out int height, out int[] y, out int[] l)

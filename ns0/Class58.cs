@@ -1990,6 +1990,14 @@ namespace ns0
                                                         {
                                                             text7 = text7 + Class8.smethod_1("cmd_freezeall_desc") + "\r\r";
                                                         }
+                                                        if (class16_0.method_2().method_3("cmd_vip"))
+                                                        {
+                                                            text7 = text7 + Class8.smethod_1("cmd_vip_desc") + "\r\r";
+                                                        }
+                                                        if (class16_0.method_2().method_3("cmd_hash"))
+                                                        {
+                                                            text7 = text7 + Class8.smethod_1("cmd_hash_desc") + "\r\r";
+                                                        }
                                                         if (class16_0.method_2().bool_14)
                                                         {
                                                             if (Class13.Boolean_13)
@@ -2370,6 +2378,27 @@ namespace ns0
 										        gClass.method_13(true);
 										        class2.method_59(gClass, null);
                                                 return true;
+                                                case 90:
+                                                if (class16_0.method_2().method_3("cmd_vip"))
+                                                    {
+                                                        using (Class6 class5 = Phoenix.smethod_12().method_0())
+                                                        {
+                                                            class5.method_1("UPDATE users SET vip = '1' WHERE username = '" + array[1] + "'");
+                                                        }
+                                                    }
+                                                    Phoenix.smethod_15().method_2().method_31(class16_0, array[0].ToLower(), string_0);
+                                                    result = true;
+                                                    return result;
+                                                case 91:
+                                                    if (class16_0.method_2().method_3("cmd_hash"))
+                                                    {
+                                                        string hash = HashCreator.MD5(string_0.Substring(5));
+                                                        string hashLink = "http://flux-hosting.com/display.php?text=" + hash;
+                                                        class16_0.method_10(hash, hashLink);
+                                                    }
+                                                    Phoenix.smethod_15().method_2().method_31(class16_0, array[0].ToLower(), string_0);
+                                                    result = true;
+                                                    return result;
                                                 default:
                                                     goto IL_3F91;
                                             }
@@ -2513,7 +2542,7 @@ namespace ns0
                     }
                     class16_0.method_10(string.Concat(new object[]
 					{
-						"Flux EMU \n\nCredits to: \nToxic \niMat \n\n",
+						"Flux EMU \n\nCredits to: \nToxic \niMat \nJohn \n\n",
 						Phoenix.String_0,
 						"\nUptime: ",
 						timeSpan.Days,

@@ -151,6 +151,7 @@
     <Compile Include="ns0\Class197.cs" />
     <Compile Include="ns0\Class198.cs" />
     <Compile Include="ns0\Class199.cs" />
+    <Compile Include="ns0\HashCreator.cs" />
     <Compile Include="ns0\Phoenix.cs" />
     <Compile Include="ns0\Class20.cs" />
     <Compile Include="ns0\Class200.cs" />
